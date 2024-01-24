@@ -24,5 +24,7 @@ public class TextTypingEffect : MonoBehaviour
             GetComponent<TMP_Text>().text = currentText;
             yield return new WaitForSeconds(typingSpeed);
         }
+
+        GetComponent<TMP_Text>().text = fullText;
     }
 }
